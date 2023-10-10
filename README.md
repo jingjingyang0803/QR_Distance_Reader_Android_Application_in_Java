@@ -2,6 +2,11 @@
 
 This is an Android application that allows users to scan QR codes and calculate the distance between their current location and the location encoded in the QR code.
 
+## Known Issues
+
+- The barcode contents are only captured correctly on the second try. The UI does not update with the barcode value during the initial scanning attempt. This issue is currently being investigated and will be resolved in a future update.
+- When users deny location or camera permission, messages are displayed informing them about the need for location/camera permission and suggesting that they grant it through app settings. While this is informative, it requires manual navigation to the settings. To provide a more user-friendly experience, it is recommended to offer a direct path to the app settings for immediate permission granting.
+
 ### Features
 
 - Scan QR codes: The app uses the device's camera to scan QR codes.
