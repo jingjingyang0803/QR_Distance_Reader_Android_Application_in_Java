@@ -149,7 +149,7 @@ public class ScanActivity extends AppCompatActivity {
                 }
             } else {
                 // Camera permission denied, display a message or take appropriate action
-                Toast.makeText(this, "Camera permission denied", Toast.LENGTH_SHORT).show();
+                barcodeValueLabel.setText("Camera permission required!\nPlease enable it through app settings.");
             }
         }
     }

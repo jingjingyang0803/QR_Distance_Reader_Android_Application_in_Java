@@ -105,7 +105,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 getLastKnownLocation();
             } else {
                 // Display "Permission denied" if location permissions are not granted
-                userLocationLabel.setText("Permission denied");
+                userLocationLabel.setText("Location permission required! \nPlease enable it through app settings.");
             }
         }
     }
