@@ -125,7 +125,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             } else if (resultCode == RESULT_CANCELED) {
                 // Handle the case when the QR code scanning is canceled
                 // Update the the user interface
-                scannedLocationLabel.setText("");
+                scannedLocationLabel.setText("QR Code scanning failed or canceled.");
                 distanceLabel.setText("");
             }
         }

@@ -110,8 +110,6 @@ public class ScanActivity extends AppCompatActivity {
                         public void run() {
 
                             String contents = barcodes.valueAt(0).displayValue;
-                            // Update the UI with the barcode value
-                            barcodeValueLabel.setText("Scanned Contents:\n " + contents);
 
                             // Create a new intent to pass the scanned QR code contents back to the MainActivity
                             Intent resultIntent = new Intent();
@@ -119,6 +117,9 @@ public class ScanActivity extends AppCompatActivity {
 
                             // Set the result as OK and pass the result intent back to the MainActivity
                             setResult(RESULT_OK, resultIntent);
+
+                            // Update the UI with the barcode value
+                            barcodeValueLabel.setText("Scanned Contents:\n " + contents);
                         }
                     });
                 }
