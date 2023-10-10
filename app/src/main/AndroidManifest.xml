@@ -4,8 +4,10 @@
 
     <uses-feature
         android:name="android.hardware.camera"
-        android:required="false" />
-    <uses-permission android:name="android.permission.CAMERA" />
+        android:required="true" />
+    <uses-permission android:name="android.permission.CAMERA" />  <!-- This line grants permission to access the camera -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />  <!-- This line grants permission to access fine location -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />  <!-- This line grants permission to access coarse location -->
 
     <application
         android:allowBackup="true"
@@ -26,7 +28,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".QrCodeScannerActivity" />
+        <activity android:name=".ScanActivity" />
     </application>
 
 
